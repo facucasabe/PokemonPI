@@ -1,10 +1,16 @@
 .App {
+  background-attachment: fixed;
   text-align: center;
+  background-color: blue;
+  font-style: oblique;
+  background-image: image("../../fondo.jpg");
 }
 
 .App-logo {
-  height: 40vmin;
+  display: inline-flex;
+  /* height: 40vmin;
   pointer-events: none;
+  background-color: red; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
