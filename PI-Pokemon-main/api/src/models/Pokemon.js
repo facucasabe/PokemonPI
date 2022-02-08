@@ -4,7 +4,7 @@ const { DataTypes } = require("sequelize");
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define("pokemon", {
-    idPokemon: {
+    id: {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,
       allowNull: false,
@@ -13,40 +13,31 @@ module.exports = (sequelize) => {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
-      // },
-      // life: {
-      //   type: DataTypes.DECIMAL,
-      //   // allowNull: false,
-      // },
-      // strength: {
-      //   type: DataTypes.DECIMAL,
-      //   allowNull: false,
-      // },
-      // defense: {
-      //   type: DataTypes.DECIMAL,
-      //   allowNull: false,
-      // },
-      // speed: {
-      //   type: DataTypes.DECIMAL,
-      //   allowNull: false,
-      // },
-      // height: {
-      //   type: DataTypes.DECIMAL,
-      //   allowNull: false,
-      // },
-      // weight: {
-      //   type: DataTypes.DECIMAL,
-      //   allowNull: false,
-      // },
-      // createdInDb: {
-      //   type: DataTypes.BOOLEAN,
-      //   allowNull: false,
-      //   defaultValue: true,
-      // },
-      // image: {
-      //   type: DataTypes.STRING,
-      //   allowNull: true,
-      // },
     },
+    life: {
+      type: DataTypes.DECIMAL,
+    },
+    attack: {
+      type: DataTypes.DECIMAL,
+    },
+    defense: {
+      type: DataTypes.DECIMAL,
+    },
+    speed: {
+      type: DataTypes.DECIMAL,
+    },
+    height: {
+      type: DataTypes.DECIMAL,
+    },
+    weight: {
+      type: DataTypes.DECIMAL,
+    },
+    img: {
+      type: DataTypes.STRING,
+    },
+    // types: {
+    //   type: DataTypes.TEXT,
+    //   allowNull: true,
+    // },
   });
 };
